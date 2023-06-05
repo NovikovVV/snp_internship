@@ -141,6 +141,46 @@
         </ul>
       </div>
     </section>
+    <section class="build-tour">
+      <div class="container">
+        <h2 id="build" class="build-tour__heading">Собери свой тур</h2>
+        <p class="build-tour__description">
+          Идейные соображения высшего порядка, а также рамки и место обучения кадров
+        </p>
+        <form action="https://echo.htmlacademy.ru/" class="build-tour__form" method="post">
+          <label for="name">Имя</label>
+          <input id="name" type="text" name="name" placeholder="Введите Ваше имя" required>
+          <label for="direction">Направление</label>
+          <select name="direction" id="direction" required>
+            <option value="" disabled selected style="display: none;">Куда хотите ехать</option>
+            <option value="there">Туда</option>
+            <option value="here">Сюда</option>
+            <option value="nowhere">Никуда</option>
+          </select>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="example@mail.com" required>
+          <label for="phone">Телефон</label>
+          <input id="phone" type="tel" name="phone" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+          <label for="departure-date">Дата от</label>
+          <input id="departure-date" type="date" name="departure-date" required>
+          <label for="return-date">Дата до</label>
+          <input id="return-date" type="date" name="return-date" required>
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+          <fieldset>
+            <legend>Вам есть 18 лет?</legend>
+            <input id="yes" type="radio" name="age" value="yes" required>
+            <label for="yes">Да</label>
+            <input id="no" type="radio" name="age" value="no">
+            <label for="no">Нет</label>
+          </fieldset>
+          <input id="accept" type="checkbox" name="accept" required>
+          <label for="accept">Нажимая кнопку, я принимаю условия Лицензионного договора</label>
+          <input type="submit" value="Найти тур">
+          <input type="reset" value="Сбросить">
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 
