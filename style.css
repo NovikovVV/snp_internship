@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 1920px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 142%;
+  font-weight: 400;
+  font-style: normal;
+}
